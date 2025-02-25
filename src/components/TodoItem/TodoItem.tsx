@@ -1,4 +1,5 @@
 import { useState } from "react"
+
 import "./TodoItem.css"
 
 export interface TodoItem{
@@ -13,13 +14,13 @@ export interface TodoItemProps {
     onDelete: (id: string) => void,
   }
 
-
-  
-
 export const TodoItem = ({todoItem: {id, value, done}, onChange, onDelete}: TodoItemProps) =>{
     const [localValue, setValue] = useState(value)
+
     const handleChange = (value: string) => {
-        setValue(value)
+        if(value.trim()){
+            setValue(value)
+        }
     }
 
     const onBlur = () => {
