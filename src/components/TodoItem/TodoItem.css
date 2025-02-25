@@ -1,0 +1,31 @@
+.item{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.item__name{
+    margin-right: auto;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #a8a8a8;
+}
+
+.item__button{
+    justify-self: center;
+}
+
+.item__delet-button{
+    background-color: #f08686dc;
+}
+
+.item__done-button{
+    margin-right: 10px;
+    background-color: #86f0bddc;
+}
+
+.done{
+    background-color: #86f0bddc;
+}
